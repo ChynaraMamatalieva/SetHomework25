@@ -23,13 +23,13 @@ public class Main {
 
     }
 
-    public static void symmetricSetDifference(Set<Integer> set, Set<Integer> set2) {
+    public static Set<Integer> symmetricSetDifference(Set<Integer> set, Set<Integer> set2) {
         Set<Integer> newSet = new HashSet<Integer>(set);
         newSet.removeAll(set2);
         set2.removeAll(set);
         newSet.addAll(set2);
         System.out.println(newSet);
-
+        return newSet;
     }
 
 }
